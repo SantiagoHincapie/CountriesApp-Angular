@@ -7,10 +7,7 @@ import { ContactPageComponent } from './shared/pages/contact-page/contact-page.c
 import { CountriesModule } from './countries/countries.module';
 
 const routs: Routes = [
-  /* {
-    path: '',
-    component: HomePageComponent,
-  }, */
+  
   {
     path: 'about',
     component: AboutPageComponent,
