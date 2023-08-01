@@ -6,13 +6,16 @@
   <div class="col">
     <!-- SearchBox -->
     <shared-search-box
-     placeholder="Buscar por capital"
-     (onValue)="searchByCapital($event)"></shared-search-box>
+      placeholder="Buscar por capital"
+      (onValue)="searchByCapital($event)"
+    ></shared-search-box>
   </div>
 </div>
 
-<hr />
-
 <div class="row">
-  <div class="col">tabla de resultados</div>
+  <div class="col">
+    <hr />
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
+    <countries-country-table [countries]="countries"></countries-country-table>
+  </div>
 </div>
